@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nilux Gaming</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0f;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#111;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00d9ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#00d9ff;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#00d9ff;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#00d9ff;
+    font-size:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#15151d;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#00d9ff;
+    margin-bottom:10px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:#15151d;
+    padding:30px;
+    border-radius:12px;
+}
+
+.stat h2{
+    color:#00d9ff;
+    font-size:40px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">NILUX</div>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#games">Games</a>
+<a href="#stats">Stats</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome To Nilux Gaming</h1>
+<p>Play. Compete. Dominate.</p>
+<a href="#" class="btn">Join Community</a>
+</section>
+
+<section id="features">
+<h2 class="section-title">Features</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Esports Tournaments</h3>
+<p>Join exciting tournaments and compete for glory.</p>
+</div>
+
+<div class="card">
+<h3>Gaming News</h3>
+<p>Stay updated with the latest gaming trends.</p>
+</div>
+
+<div class="card">
+<h3>Community Events</h3>
+<p>Meet gamers and participate in exclusive events.</p>
+</div>
+
+<div class="card">
+<h3>Pro Teams</h3>
+<p>Create squads and challenge top players.</p>
+</div>
+</div>
+</section>
+
+<section id="games">
+<h2 class="section-title">Popular Games</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Valorant</h3>
+<p>Competitive tactical shooter.</p>
+</div>
+
+<div class="card">
+<h3>Minecraft</h3>
+<p>Create, survive and explore worlds.</p>
+</div>
+
+<div class="card">
+<h3>Fortnite</h3>
+<p>Battle Royale action.</p>
+</div>
+
+<div class="card">
+<h3>GTA V</h3>
+<p>Open-world multiplayer adventures.</p>
+</div>
+</div>
+</section>
+
+<section id="stats">
+<h2 class="section-title">Our Stats</h2>
+
+<div class="stats">
+<div class="stat">
+<h2>50K+</h2>
+<p>Players</p>
+</div>
+
+<div class="stat">
+<h2>300+</h2>
+<p>Tournaments</p>
+</div>
+
+<div class="stat">
+<h2>25K+</h2>
+<p>Discord Members</p>
+</div>
+
+<div class="stat">
+<h2>$100K+</h2>
+<p>Prize Pool</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div style="text-align:center;">
+<p>Email: contact@niluxgaming.com</p>
+<br>
+<a href="#" class="btn">Join Discord</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Nilux Gaming. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
